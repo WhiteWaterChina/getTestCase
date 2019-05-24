@@ -556,6 +556,7 @@ class getTestCaseFrame(wx.Frame):
                 SheetOne.write(2 + index_write, 28, case_osLimit[index_write], formatOne)
                 SheetOne.write(2 + index_write, 29, case_osAndHardwareRelevance[index_write], formatOne)
                 SheetOne.write(2 + index_write, 30, case_ifAutomatedTest[index_write], formatOne)
+                SheetOne.data_validation(2 + index_write, 31, 2 + index_write, 31, {'validate': 'list', 'source': ['结构/观察类测试', '拔插电源线（上下电）', '特殊的测试环境', '指示灯查看', '界面查看', '需要按键操作', '插拔设备', '特殊的操作系统']})
                 SheetOne.write(2 + index_write, 31, case_nonautomatedCause[index_write], formatOne)
                 SheetOne.write(2 + index_write, 32, case_automatedNumber[index_write], formatOne)
                 SheetOne.write(2 + index_write, 33, case_ifReserveLog[index_write], formatOne)
